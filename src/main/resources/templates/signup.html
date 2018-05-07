@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymelead.org">
+<head>
+<link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css">
+<link th:href="@{/style.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form method="post" action="/signup">
+					<div class="form-group">
+						<label for="username">Username</label> <input
+							type="text" class="form-control" id="username"
+							placeholder="Username">
+					</div>
+					<div class="form-group">
+						<label for="email">Email address</label> <input
+							type="email" class="form-control" id="email"
+							placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label> <input
+							type="password" class="form-control" id="password"
+							placeholder="Password">
+					</div>
+					<div class="form-group">
+						<label for="repassword">Password</label> <input
+							type="password" class="form-control" id="repassword"
+							placeholder="Password">
+					</div>
+					<button type="submit" class="btn btn-default">Sign up</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" scr="webjars/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript"
+		scr="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
